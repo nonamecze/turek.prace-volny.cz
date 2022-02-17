@@ -17,9 +17,12 @@ class loginHandler
     public function checkIfPersonIsInDatabase(): bool
     {
         $data = (new connection())
-            ->fetchData(sprintf("SELECT * FROM person 
-                                        WHERE username LIKE '%s'
-                                        AND password LIKE '%s'
+            ->fetchData(
+                sprintf(
+                    "SELECT * 
+                            FROM person 
+                            WHERE username LIKE '%s'
+                            AND password LIKE '%s'
                                         ",
                                         $this->username,
                                         $this->password

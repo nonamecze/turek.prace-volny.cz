@@ -6,13 +6,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div name="header">
-
-</div>
-
 <section>
-    <div style="background-color: red">
-        <form action="loginForm.php" method="post" style="width: 30%;background-color: blue;">
+    <div class="container">
+        <form class="child" action="loginForm.php" method="post" style="width: 30%;background-color: blue;">
             <input type="text" name="username" placeholder="username">
             <br>
             <input type="text" name="password" placeholder="password">

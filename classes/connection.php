@@ -21,7 +21,6 @@ class connection
 
         $connString = $this->createConnectionString();
         $cn = pg_connect($connString);
-
         if ($cn) {
             return $cn;
         } else {

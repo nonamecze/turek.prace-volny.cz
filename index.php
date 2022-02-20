@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>366dnizakatrem</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<section>
-    <div class="container">
-        <form class="child" action="loginForm.php" method="post" style="width: 30%;background-color: blue;">
-            <input type="text" name="username" placeholder="username">
-            <br>
-            <input type="text" name="password" placeholder="password">
-            <br>
-            <button type="submit" name="submit">Přihlásit se</button>
-        </form>
-    </div>
-</section>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<section class="login-dark" style="background: rgb(88,88,88);">
+    <form method="post", action="loginForm.php">
+        <h2 class="visually-hidden">Login Form</h2>
+        <div class="illustration"><i class="icon ion-ios-locked-outline" style="color: rgb(54,167,249);"></i></div>
+        <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+        <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Heslo"></div>
+        <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="background: rgb(54,167,249);">Přihlásit se</button></div><a class="forgot" href="#">Zapoměl jsi heslo? Klikněte zde.</a>
+    </form>
+</section>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
